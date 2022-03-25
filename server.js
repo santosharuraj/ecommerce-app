@@ -23,7 +23,7 @@ const password = process.env.DB_PASSWORD;
 const URL = `mongodb+srv://${username}:${password}@cluster0.qzrud.mongodb.net/flipkart?retryWrites=true&w=majority`;
 Connection(process.env.MONGODB_URI || URL);
 
-if (process.env.NODE_ENV === 'prodcution') {
+if (process.env.NODE_ENV === 'producution') {
     app.use(express.static("client/build"))
 }
 
